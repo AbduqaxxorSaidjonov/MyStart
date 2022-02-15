@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		762B5EE827A38B4900C2D24D /* MyStartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B5EE727A38B4900C2D24D /* MyStartApp.swift */; };
-		762B5EEA27A38B4900C2D24D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B5EE927A38B4900C2D24D /* ContentView.swift */; };
 		762B5EEC27A38B4A00C2D24D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 762B5EEB27A38B4A00C2D24D /* Assets.xcassets */; };
 		762B5EEF27A38B4A00C2D24D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 762B5EEE27A38B4A00C2D24D /* Preview Assets.xcassets */; };
 		762B5EF127A38B4A00C2D24D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B5EF027A38B4A00C2D24D /* Persistence.swift */; };
@@ -16,6 +15,7 @@
 		762B5EFE27A38B4A00C2D24D /* MyStartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B5EFD27A38B4A00C2D24D /* MyStartTests.swift */; };
 		762B5F0827A38B4A00C2D24D /* MyStartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B5F0727A38B4A00C2D24D /* MyStartUITests.swift */; };
 		762B5F0A27A38B4A00C2D24D /* MyStartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B5F0927A38B4A00C2D24D /* MyStartUITestsLaunchTests.swift */; };
+		762B5F1927A38BAC00C2D24D /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B5F1827A38BAC00C2D24D /* Homescreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		762B5EE427A38B4900C2D24D /* MyStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		762B5EE727A38B4900C2D24D /* MyStartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStartApp.swift; sourceTree = "<group>"; };
-		762B5EE927A38B4900C2D24D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		762B5EEB27A38B4A00C2D24D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		762B5EEE27A38B4A00C2D24D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		762B5EF027A38B4A00C2D24D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		762B5F0327A38B4A00C2D24D /* MyStartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyStartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		762B5F0727A38B4A00C2D24D /* MyStartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStartUITests.swift; sourceTree = "<group>"; };
 		762B5F0927A38B4A00C2D24D /* MyStartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStartUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		762B5F1827A38BAC00C2D24D /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +98,9 @@
 		762B5EE627A38B4900C2D24D /* MyStart */ = {
 			isa = PBXGroup;
 			children = (
+				762B5F1627A38B6600C2D24D /* apputils */,
+				762B5F1727A38B9700C2D24D /* screens */,
 				762B5EE727A38B4900C2D24D /* MyStartApp.swift */,
-				762B5EE927A38B4900C2D24D /* ContentView.swift */,
-				762B5EEB27A38B4A00C2D24D /* Assets.xcassets */,
-				762B5EF027A38B4A00C2D24D /* Persistence.swift */,
 				762B5EF227A38B4A00C2D24D /* MyStart.xcdatamodeld */,
 				762B5EED27A38B4A00C2D24D /* Preview Content */,
 			);
@@ -131,6 +130,23 @@
 				762B5F0927A38B4A00C2D24D /* MyStartUITestsLaunchTests.swift */,
 			);
 			path = MyStartUITests;
+			sourceTree = "<group>";
+		};
+		762B5F1627A38B6600C2D24D /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				762B5EEB27A38B4A00C2D24D /* Assets.xcassets */,
+				762B5EF027A38B4A00C2D24D /* Persistence.swift */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		762B5F1727A38B9700C2D24D /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				762B5F1827A38BAC00C2D24D /* Homescreen.swift */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762B5F1927A38BAC00C2D24D /* Homescreen.swift in Sources */,
 				762B5EF427A38B4A00C2D24D /* MyStart.xcdatamodeld in Sources */,
 				762B5EF127A38B4A00C2D24D /* Persistence.swift in Sources */,
-				762B5EEA27A38B4900C2D24D /* ContentView.swift in Sources */,
 				762B5EE827A38B4900C2D24D /* MyStartApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
